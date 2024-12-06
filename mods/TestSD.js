@@ -1,13 +1,13 @@
-// Register the new Sandbloxel block as a land block with the mod name "skkibdi"
+// Register the new Skkibdi block with a custom category (not land)
 const SkkibdiBlock = new Block({
-  name: "skkibdi",  // Name of the block, updated to "skkibdi"
-  texture: "sandbloxel_texture", // Placeholder for the texture (replace with actual texture)
+  name: "skkibdi",  // Name of the block
+  texture: "sandbloxel_texture", // Placeholder for texture (replace with actual texture)
   hardness: 1000000, // Extremely strong, like diamond
   color: "#00FFFF", // Light cyan, similar to diamond powder
   description: "A block as strong as diamond but looks like powder!",
-
-  // Specify that this block behaves like land, not liquid
-  category: "land",  // Make it behave like a solid, land block
+  
+  // Not categorized as 'land' (use a custom category or behavior)
+  category: "Land",  // Use a custom category instead of land 
   
   // Override the onTick method to simulate heat resistance
   onTick: function (x, y, z) {
